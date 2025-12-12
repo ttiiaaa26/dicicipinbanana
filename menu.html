@@ -4,58 +4,15 @@
   <meta charset="UTF-8">
   <title>Menu Dicicipin</title>
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    /* ---------- POPUP DESKRIPSI ---------- */
-/* BACKGROUND GELAP */
-.modal-desc {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  inset: 0;
-  background: rgba(0,0,0,0.7);
-  backdrop-filter: blur(2px);
-}
-
-/* KOTAK POPUP KUNING */
-.modal-desc-content {
-  background: #FFE27A;
-  color: #4A3600;
-  padding: 25px;
-  width: 80%;
-  max-width: 350px;
-  margin: 30% auto;
-  border-radius: 18px;
-  box-shadow: 0 0 15px rgba(255, 216, 0, 0.7);
-  border: 3px solid #FFCB00;
-  font-size: 17px;
-  font-weight: 600;
-  text-align: center;
-  animation: fadeIn 0.3s ease;
-}
-
-/* TOMBOL CLOSE */
-.close-desc {
-  float: right;
-  font-size: 26px;
-  font-weight: bold;
-  cursor: pointer;
-  color: #4A3600;
-}
-
-/* ANIMASI */
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.8); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-  </style>
 </head>
 <body>
 
 <nav>
   <a href="home.html">Home</a>
   <a href="menu.html">Menu</a>
+  <a href="user.html">User</a>
+  <a href="sop.html">SOP</a>
+  <a href="rating.html">Rating</a>
 </nav>
 
 <h1 style="text-align:center; margin-top:20px;">Menu Banana Crispy</h1>
@@ -63,131 +20,265 @@
 <div class="menu-container">
 
     <!-- ========== MENU BANANA CRISPY ========== -->
-    <div class="menu-item" onclick="showDesc('Pisang goreng renyah klasik dengan taburan gula sederhana.')">
-        <img src="Pisang pasir original.jpg">
+    <div class="menu-item">
+        <img src="img/Pisang pasir original.jpg">
         <h3>Banana Crispy Original</h3>
         <p>Rp 13.000</p>
-        <button onclick="openOrderOptions('Banana Crispy Original'); event.stopPropagation();">ORDER NOW</button>
+        <button onclick="openOrderOptions('Banana Crispy Original')">ORDER NOW</button>
     </div>
 
-    <div class="menu-item" onclick="showDesc('Pisang goreng renyah dengan coklat lumer yang manis dan creamy.')">
-        <img src="Pisang coklat lumer.jpg">
+    <div class="menu-item">
+        <img src="img/Pisang coklat lumer.jpg">
         <h3>Banana Crispy Chocolate</h3>
         <p>Rp 15.000</p>
-        <button onclick="openOrderOptions('Banana Crispy Chocolate'); event.stopPropagation();">ORDER NOW</button>
+        <button onclick="openOrderOptions('Banana Crispy Chocolate')">ORDER NOW</button>
     </div>
 
-    <div class="menu-item" onclick="showDesc('Pisang crispy dengan topping greentea lembut dan wangi matcha.')">
-        <img src="download.jpg">
+    <div class="menu-item">
+        <img src="img/download.jpg">
         <h3>Banana Crispy Greentea</h3>
         <p>Rp 15.000</p>
-        <button onclick="openOrderOptions('Banana Crispy Greentea'); event.stopPropagation();">ORDER NOW</button>
+        <button onclick="openOrderOptions('Banana Crispy Greentea')">ORDER NOW</button>
     </div>
 
-    <div class="menu-item" onclick="showDesc('Pisang crispy dengan saus strawberry manis segar.')">
-        <img src="download (1).jpg">
+    <div class="menu-item">
+        <img src="img/download (1).jpg">
         <h3>Banana Crispy Strawberry</h3>
         <p>Rp 15.000</p>
-        <button onclick="openOrderOptions('Banana Crispy Strawberry'); event.stopPropagation();">ORDER NOW</button>
+        <button onclick="openOrderOptions('Banana Crispy Strawberry')">ORDER NOW</button>
     </div>
 
-    <div class="menu-item" onclick="showDesc('Pisang crispy dengan blueberry manis dan aroma khas buah beri.')">
-        <img src="Blubery.jpg">
+    <div class="menu-item">
+        <img src="img/blueberry.jpg">
         <h3>Banana Crispy Blueberry</h3>
         <p>Rp 15.000</p>
-        <button onclick="openOrderOptions('Banana Crispy Blueberry'); event.stopPropagation();">ORDER NOW</button>
+        <button onclick="openOrderOptions('Banana Crispy Blueberry')">ORDER NOW</button>
     </div>
 
-    <div class="menu-item" onclick="showDesc('Pisang crispy dengan rasa cappucino khas kopi susu yang lembut.')">
-        <img src="cappucino.jpg">
+    <div class="menu-item">
+        <img src="img/cappuccino.jpg">
         <h3>Banana Crispy Cappucino</h3>
         <p>Rp 15.000</p>
-        <button onclick="openOrderOptions('Banana Crispy Cappucino'); event.stopPropagation();">ORDER NOW</button>
+        <button onclick="openOrderOptions('Banana Crispy Cappucino')">ORDER NOW</button>
     </div>
 
-    <div class="menu-item" onclick="showDesc('Pisang crispy dengan campuran berbagai topping favorit dalam satu porsi.')">
-        <img src="Mix toping.jpg">
-        <h3>Banana Crispy Mix</h3>
+    <div class="menu-item">
+        <img src="img/mix.jpg">
+        <h3>Banana Crispy Mix 7 rasa</h3>
         <p>Rp 15.000</p>
-        <button onclick="openOrderOptions('Banana Crispy Mix'); event.stopPropagation();">ORDER NOW</button>
+        <button onclick="openOrderOptions('Banana Crispy Mix')">ORDER NOW</button>
     </div>
 
-    <div class="menu-item" onclick="showDesc('Pisang crispy dengan topping tiramisu lembut dan creamy.')">
-        <img src="download (2).jpg">
+    <div class="menu-item">
+        <img src="img/misuyate.jpg">
+        <h3>Banana Crispy Misuyate</h3>
+        <p>Rp 15.000</p>
+        <button onclick="openOrderOptions('Banana Crispy Misuyate')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/avolate.jpg">
+        <h3>Banana Crispy Avolate</h3>
+        <p>Rp 15.000</p>
+        <button onclick="openOrderOptions('Banana Crispy Avolate')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/redvelvet.jpg">
+        <h3>Banana Crispy Red Velvet</h3>
+        <p>Rp 15.000</p>
+        <button onclick="openOrderOptions('Banana Crispy Red Velvet')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/tiramisu.jpg">
         <h3>Banana Crispy Tiramisu</h3>
         <p>Rp 15.000</p>
-        <button onclick="openOrderOptions('Banana Crispy Tiramisu'); event.stopPropagation();">ORDER NOW</button>
+        <button onclick="openOrderOptions('Banana Crispy Tiramisu')">ORDER NOW</button>
     </div>
 
-    <div class="menu-item" onclick="showDesc('Pisang crispy dengan keju melimpah, gurih dan lumer.')">
-        <img src="pisang keju.jpg">
+    <div class="menu-item">
+        <img src="img/cheese.jpg">
         <h3>Banana Crispy Cheese</h3>
         <p>Rp 15.000</p>
-        <button onclick="openOrderOptions('Banana Crispy Cheese'); event.stopPropagation();">ORDER NOW</button>
+        <button onclick="openOrderOptions('Banana Crispy Cheese')">ORDER NOW</button>
     </div>
 
-    <div class="menu-item" onclick="showDesc('Pisang crispy dengan saus taro ungu manis dan creamy.')">
-        <img src="Piscok Saus Taro.jpg">
+    <div class="menu-item">
+        <img src="img/mango.jpg">
+        <h3>Banana Crispy Mango</h3>
+        <p>Rp 15.000</p>
+        <button onclick="openOrderOptions('Banana Crispy Mango')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/rainbow.jpg">
+        <h3>Banana Crispy Rainbow</h3>
+        <p>Rp 15.000</p>
+        <button onclick="openOrderOptions('Banana Crispy Rainbow')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/avocado.jpg">
+        <h3>Banana Crispy Avocado</h3>
+        <p>Rp 15.000</p>
+        <button onclick="openOrderOptions('Banana Crispy Avocado')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/taro.jpg">
         <h3>Banana Crispy Taro</h3>
         <p>Rp 15.000</p>
-        <button onclick="openOrderOptions('Banana Crispy Taro'); event.stopPropagation();">ORDER NOW</button>
+        <button onclick="openOrderOptions('Banana Crispy Taro')">ORDER NOW</button>
     </div>
 
-    <div class="menu-item" onclick="showDesc('Pisang crispy dengan topping chocomaltine crunchy dan manis.')">
-        <img src="Chocomaltine.jpg">
+    <div class="menu-item">
+        <img src="img/chocomaltine.jpg">
         <h3>Banana Crispy Chocomaltine</h3>
         <p>Rp 17.000</p>
-        <button onclick="openOrderOptions('Banana Crispy Chocomaltine'); event.stopPropagation();">ORDER NOW</button>
+        <button onclick="openOrderOptions('Banana Crispy Chocomaltine')">ORDER NOW</button>
     </div>
 
-    <div class="menu-item" onclick="showDesc('Pisang crispy dengan saus hazelnut premium, manis dan wangi.')">
-        <img src="hazzelnut.jpg">
+    <div class="menu-item">
+        <img src="img/hazelnut.jpg">
         <h3>Banana Crispy Hazelnut</h3>
         <p>Rp 18.000</p>
-        <button onclick="openOrderOptions('Banana Crispy Hazelnut'); event.stopPropagation();">ORDER NOW</button>
+        <button onclick="openOrderOptions('Banana Crispy Hazelnut')">ORDER NOW</button>
     </div>
 
     <!-- ========== SWEET CORN MENU ========== -->
-    <div class="menu-item" onclick="showDesc('Jagung manis dengan keju lumer dan rasa gurih manis.')">
-        <img src="Jasuke.jpg">
+    <div class="menu-item">
+        <img src="img/corn-cheese.jpg">
         <h3>Sweet Corn Cheese</h3>
         <p>Rp 9.000</p>
-        <button onclick="openOrderOptions('Sweet Corn Cheese'); event.stopPropagation();">ORDER NOW</button>
+        <button onclick="openOrderOptions('Sweet Corn Cheese')">ORDER NOW</button>
     </div>
-  
-    <!-- ========== MINUMAN ========== -->
-    <div class="menu-item" onclick="showDesc('Minuman matcha creamy dan segar.')">
-        <img src="Matcha Blisss.jpg">
+
+    <div class="menu-item">
+        <img src="img/corn-chocomaltine.jpg">
+        <h3>Sweet Corn Chocomalt Cheese</h3>
+        <p>Rp 10.000</p>
+        <button onclick="openOrderOptions('Sweet Corn Chocomalt Cheese')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/corn-choco.jpg">
+        <h3>Sweet Corn Choco Cheese</h3>
+        <p>Rp 10.000</p>
+        <button onclick="openOrderOptions('Sweet Corn Choco Cheese')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/corn-tiramisu.jpg">
+        <h3>Sweet Corn Tiramisu Cheese</h3>
+        <p>Rp 10.000</p>
+        <button onclick="openOrderOptions('Sweet Corn Tiramisu Cheese')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/corn-meises.jpg">
+        <h3>Sweet Corn Meises Cheese</h3>
+        <p>Rp 10.000</p>
+        <button onclick="openOrderOptions('Sweet Corn Meises Cheese')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/corn-oreo.jpg">
+        <h3>Sweet Corn Oreo Cheese</h3>
+        <p>Rp 10.000</p>
+        <button onclick="openOrderOptions('Sweet Corn Oreo Cheese')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/corn-taro.jpg">
+        <h3>Sweet Corn Taro Cheese</h3>
+        <p>Rp 10.000</p>
+        <button onclick="openOrderOptions('Sweet Corn Taro Cheese')">ORDER NOW</button>
+    </div>
+
+    <!-- ========== MINUMAN MENU ========== -->
+    <div class="menu-item">
+        <img src="img/fresh-lemon-tea.jpg">
+        <h3>Fresh Lemon Tea</h3>
+        <p>Rp 10.000</p>
+        <button onclick="openOrderOptions('Fresh Lemon Tea')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/lemonade.jpg">
+        <h3>Fresh Lemonade</h3>
+        <p>Rp 10.000</p>
+        <button onclick="openOrderOptions('Fresh Lemonade')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/red-berry.jpg">
+        <h3>Red Berry Milk</h3>
+        <p>Rp 12.000</p>
+        <button onclick="openOrderOptions('Red Berry Milk')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/sunset-beach.jpg">
+        <h3>Sunset Beach</h3>
+        <p>Rp 12.000</p>
+        <button onclick="openOrderOptions('Sunset Beach')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/matcha-bliss.jpg">
         <h3>Matcha Bliss</h3>
         <p>Rp 15.000</p>
-        <button onclick="openOrderOptions('Matcha Bliss'); event.stopPropagation();">ORDER NOW</button>
+        <button onclick="openOrderOptions('Matcha Bliss')">ORDER NOW</button>
     </div>
 
-    <div class="menu-item" onclick="showDesc('Minuman Milo lembut dengan rasa coklat kuat.')">
-        <img src="Milo dino.jpg">
+    <div class="menu-item">
+        <img src="img/milo-dino.jpg">
         <h3>Milo Dino</h3>
         <p>Rp 15.000</p>
-        <button onclick="openOrderOptions('Milo Dino'); event.stopPropagation();">ORDER NOW</button>
+        <button onclick="openOrderOptions('Milo Dino')">ORDER NOW</button>
     </div>
-  
-    <div class="menu-item" onclick="showDesc('Teh lemon segar, manis dan asam yang menyegarkan.')">
-        <img src="lemon tea.jpg">
-        <h3>Lemon Tea</h3>
-        <p>Rp 10.000</p>
-        <button onclick="openOrderOptions('Lemon Tea'); event.stopPropagation();">ORDER NOW</button>
+
+    <div class="menu-item">
+        <img src="img/premium-tea.jpg">
+        <h3>Premium Tea</h3>
+        <p>Rp 5.000</p>
+        <button onclick="openOrderOptions('Premium Tea')">ORDER NOW</button>
     </div>
-  
+
+    <div class="menu-item">
+        <img src="img/air-mineral.jpg">
+        <h3>Air Mineral</h3>
+        <p>Rp 5.000</p>
+        <button onclick="openOrderOptions('Air Mineral')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/nutrisari.jpg">
+        <h3>Nutrisari</h3>
+        <p>Rp 6.000</p>
+        <button onclick="openOrderOptions('Nutrisari')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/goodday.jpg">
+        <h3>Good Day</h3>
+        <p>Rp 6.000</p>
+        <button onclick="openOrderOptions('Good Day')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/lychee-tea.jpg">
+        <h3>Lychee Tea</h3>
+        <p>Rp 8.000</p>
+        <button onclick="openOrderOptions('Lychee Tea')">ORDER NOW</button>
+    </div>
+
 </div>
 
-<!-- POPUP DESKRIPSI -->
-<div id="descModal" class="modal-desc">
-  <div class="modal-desc-content">
-    <span class="close-desc" onclick="closeDesc()">&times;</span>
-    <p id="descText"></p>
-  </div>
-</div>
 
-<!-- POPUP ORDER (Tetap seperti versi kamu) -->
+<!-- POPUP ORDER -->
+<!-- POPUP ORDER -->
 <div id="orderPopup" class="popup">
   <div class="popup-content">
     <h3>Pilih Platform Pemesanan</h3>
@@ -195,13 +286,13 @@
 
     <div class="order-buttons">
       <button class="order-btn btn-wa" onclick="orderWhatsApp()">
-        <img src="WA.jpg"> WhatsApp
+        <img src="img/WA.jpg"> WhatsApp
       </button>
       <button class="order-btn btn-gofood" onclick="orderGoFood()">
-        <img src="GOFOOD.png"> GoFood
+        <img src="img/GOFOOD.png"> GoFood
       </button>
       <button class="order-btn btn-shopee" onclick="orderShopeeFood()">
-        <img src="SHOPEE.png"> ShopeeFood
+        <img src="img/SHOPEE.png"> ShopeeFood
       </button>
     </div>
 
@@ -211,19 +302,5 @@
 
 
 <script src="script.js"></script>
-
-<script>
-/* ---------- POPUP DESKRIPSI ---------- */
-function showDesc(text) {
-  document.getElementById("descText").innerText = text;
-  document.getElementById("descModal").style.display = "block";
-}
-
-function closeDesc() {
-  document.getElementById("descModal").style.display = "none";
-}
-</script>
-
 </body>
 </html>
-
