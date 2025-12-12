@@ -1,74 +1,33 @@
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>Dicicip.in - Banana Crispy</title>
+# 🍌 Dicicip.in – Website UMKM Banana Crispy
 
-  <!-- Bootstrap Icons untuk Sosmed -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+Selamat datang di repository **Dicicip.in Banana Crispy**, website UMKM yang dibuat untuk menampilkan informasi, menu, dan fitur interaktif seputar produk Banana Crispy.
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+Website ini dibangun menggunakan **HTML**, **CSS**, dan **JavaScript**, lalu dipisah ke beberapa file agar rapi dan mudah dikembangkan.
 
-<!-- NAVIGATION -->
-<nav class="navbar">
-  <a href="home.html" class="nav-link">Home</a>
-  <a href="menu.html" class="nav-link">Menu</a>
-</nav>
+---
 
-<!-- HERO SECTION -->
-<header class="hero">
-  <div class="hero-content">
-    <h1>Dicicip.in Banana Crispy</h1>
-    <p>Nikmati banana crispy dengan berbagai pilihan topping favoritmu!</p>
-  </div>
-</header>
+## ✨ Fitur Website
 
-<!-- KNOWLEDGE SECTION -->
-<section class="info-container">
-  <h2 class="info-title">Tentang Dicicip.in</h2>
+### ⭐ Halaman Home (`home.html`)
+- Hero banner bergaya modern
+- Informasi lengkap tentang UMKM Dicicip.in
+- Deskripsi produk, alamat, layanan, dan detail usaha
+- Tombol sosial media (Instagram, WhatsApp, Facebook, TikTok)
 
-  <p>
-    Restoran <strong>Dicicip.in Banana Pisang Crispy, Sidorejo</strong> merupakan restoran yang berlokasi di
-    <strong>Provinsi Jawa Tengah</strong>, tepatnya di daerah <strong>Salatiga</strong>.
-  </p>
+### ⭐ Halaman Menu (`menu.html`)
+- List menu Banana Crispy
+- Harga & variasi topping
+- (Opsional) Tombol “Add to Cart”
 
-  <p>
-    <strong>Alamat :</strong> Jl. Monginsidi, Sidorejo, Salatiga <br>
-    <strong>Instagram :</strong> @dicicip.in <br>
-    <strong>Sejak :</strong> 08-Apr-2019 <br>
-    <strong>Ambil Di Tempat :</strong> Ya <br>
-    <strong>Bisa Dikirim :</strong> Ya
-  </p>
+### ⭐ Styling (`style.css`)
+- Mengatur warna, background, layout, dan tampilan hero
+- Button sosial media interaktif
+- Tampilan clean & aesthetic
 
-  <p>
-    UMKM ini menjual berbagai macam jenis makanan/minuman seperti 
-    <strong>Snacks berupa Pisang Crispy</strong> dan <strong>Snack serta minuman lainnya</strong>.
-    Harga yang ditawarkan cukup terjangkau untuk anak-anak, remaja, maupun orang dewasa.
-    Menu yang bervariasi cocok disantap bersama teman atau sahabat sebagai moodbooster.
-  </p>
-</section>
+### ⭐ Script (`script.js`)
+- Mengatur fungsi tambahan seperti navbar interaktif, animasi, dll
 
-<!-- SOCIAL MEDIA -->
-<section class="social-section">
-  <h3>Ikuti Sosial Media Kami</h3>
+---
 
-  <div class="social-icons">
-    <a href="https://instagram.com/dicicip.in" target="_blank" class="social-btn ig">
-      <i class="bi bi-instagram"></i>
-    </a>
-    <a href="https://wa.me/628xxx" target="_blank" class="social-btn wa">
-      <i class="bi bi-whatsapp"></i>
-    </a>
-    <a href="#" class="social-btn fb" target="_blank">
-      <i class="bi bi-facebook"></i>
-    </a>
-    <a href="#" class="social-btn tt" target="_blank">
-      <i class="bi bi-tiktok"></i>
-    </a>
-  </div>
-</section>
-
-</body>
-</html>
+## 📁 **Struktur Folder**
 
